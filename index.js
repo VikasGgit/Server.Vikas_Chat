@@ -6,7 +6,7 @@ const socketIo=require( "socket.io" );
 const app = express();
 const server=http.createServer(app);
 const io=socketIo(server);
-const port= process.env.PORT;
+const port= process.env.PORT|| 4500;
 
 const users=[];
 
